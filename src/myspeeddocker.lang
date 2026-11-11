@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "myspeeddocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[zh-cn]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "网络测速与历史记录面板，支持定时测速。"
+release_note = "1. First release."
+important    = "首次使用请打开网页完成初始化。数据保存在 DockerAppData/myspeeddocker，重启和升级不会丢失。容器以 uid 1000 运行，挂载目录需对该用户可读。需要 DockerEngine；Docker Hub 不可达时先配置镜像加速。卸载并删除数据前请备份。局域网内为 HTTP。"
+
+[zh-hk]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "网络测速与历史记录面板，支持定时测速。"
+release_note = "1. First release."
+important    = "首次使用請開啟網頁完成初始化。資料保存在 DockerAppData/myspeeddocker，重新啟動和升級不會遺失。容器以 uid 1000 運行，掛載目錄需對該使用者可讀。需要 DockerEngine；Docker Hub 不可達時先設定鏡像加速。解除安裝並刪除資料前請備份。區域網路內為 HTTP。"
+
+[fr-fr]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[de-de]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[it-it]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[es-es]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[hu-hu]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ja-jp]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ko-kr]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[pl-pl]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ru-ru]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[tr-tr]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[pt-pt]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[ar-sa]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[cs-cz]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[he-il]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[id-id]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[nb-no]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[nl-nl]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[sv-se]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[th-th]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+
+[vi-vn]
+name         = "MySpeed"
+auth         = "gnmyt"
+version      = "@@VERSION@@"
+descript     = "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder."
+release_note = "1. First release."
+important    = "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN."
+

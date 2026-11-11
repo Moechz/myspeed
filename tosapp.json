@@ -1,0 +1,98 @@
+{
+  "app_id": "myspeeddocker",
+  "title": "MySpeed",
+  "image": "germannewsmaker/myspeed:1.0.9",
+  "repo_name": "myspeed",
+  "mode": "plain",
+  "container_port": 5216,
+  "category": [
+    "Utilities"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/myspeeddocker/data",
+      "container": "/myspeed/data"
+    },
+    {
+      "host": "/Volume1/DockerAppData/myspeeddocker/bin",
+      "container": "/myspeed/bin"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "gnmyt",
+  "upstream_url": "https://github.com/gnmyt/myspeed",
+  "upstream_license": "MIT",
+  "descript": "MySpeed runs periodic internet speed tests and keeps a history of download, upload and latency results. It can also test multiple interfaces and show them on a dashboard. This package runs the official Docker Hub image as a non-root container and keeps its database and downloaded test binaries in the application data folder.",
+  "release_note": "1. First release.",
+  "important": "Open the web UI to start a test or enable scheduled tests; results are stored in /Volume1/DockerAppData/myspeeddocker/. The container runs as uid 1000 and needs outbound internet access to reach the speed-test servers. Needs DockerEngine; configure a registry mirror if Docker Hub is unreachable. Back up the data folder before uninstalling with data removal. Plain HTTP on the LAN.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": [
+      "docker-entrypoint.sh"
+    ],
+    "cmd": [
+      "node",
+      "server"
+    ],
+    "exposed_ports": [
+      5216
+    ],
+    "declared_volumes": [
+      "/myspeed/data"
+    ],
+    "image_healthcheck": [],
+    "digest": "germannewsmaker/myspeed@sha256:3a3e774b3f78d930a5a962d625b99bcb3d71730bfeb4a6b93e04fd38cfe7d9a9",
+    "architecture": "x86_64",
+    "platforms": [],
+    "http_client_in_image": "wget",
+    "trial_run": {
+      "ok": false,
+      "http_code": "",
+      "state": "exited",
+      "paths": [
+        "/myspeed",
+        "/myspeed/data"
+      ],
+      "host_port": 18000,
+      "log_tail": "Could not create the data folder. Please check the permission",
+      "files_in_mounts": ""
+    },
+    "docker_hub": {},
+    "github": {}
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "wget -q -O /dev/null http://127.0.0.1:5216/ || exit 1"
+  ],
+  "entrypoint_file": "src/entrypoint.sh",
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "myspeeddocker",
+  "github_repo": "myspeed",
+  "upstream_version": "1.0.9",
+  "release_tag_prefix": "v",
+  "version": "1.0.9-1",
+  "help": "https://github.com/Moechz/myspeed/issues",
+  "official": "https://github.com/gnmyt/myspeed",
+  "license": "MIT",
+  "docker_socket": false,
+  "group_add": [],
+  "platforms": [
+    "x86_64",
+    "aarch64"
+  ],
+  "translations": {
+    "zh-cn": {
+      "descript": "网络测速与历史记录面板，支持定时测速。",
+      "important": "首次使用请打开网页完成初始化。数据保存在 DockerAppData/myspeeddocker，重启和升级不会丢失。容器以 uid 1000 运行，挂载目录需对该用户可读。需要 DockerEngine；Docker Hub 不可达时先配置镜像加速。卸载并删除数据前请备份。局域网内为 HTTP。"
+    },
+    "zh-hk": {
+      "descript": "网络测速与历史记录面板，支持定时测速。",
+      "important": "首次使用請開啟網頁完成初始化。資料保存在 DockerAppData/myspeeddocker，重新啟動和升級不會遺失。容器以 uid 1000 運行，掛載目錄需對該使用者可讀。需要 DockerEngine；Docker Hub 不可達時先設定鏡像加速。解除安裝並刪除資料前請備份。區域網路內為 HTTP。"
+    }
+  },
+  "host_port": 8083
+}
