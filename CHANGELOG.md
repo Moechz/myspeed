@@ -2,6 +2,11 @@
 
 All notable user-visible changes to the MySpeed TOS application package.
 
+## 1.0.9-3 — 2026-11-12
+
+### Changed
+- Icon: replaced the letter monogram with a functional vector mark that describes what the app does (the upstream project does not publish a compliant SVG).
+
 ## 1.0.9-2 — 2026-11-12
 
 ### Changed
